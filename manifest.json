@@ -1,0 +1,25 @@
+{
+    "name": "Ray VPN",
+    "description": "A cute ray that enchances your experience",
+    "version": "13.09.24",
+    "manifest_version": 3,
+    "permissions": ["scripting", "activeTab", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      { 
+        "matches": ["*://*/**/mod/quiz/attempt.php*", "*://*/mod/quiz/attempt.php*", "file:///*"],
+        "js": ["scripts/content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": "images/icon.png"
+    },
+    "icons": {
+        "48": "images/icon48.png",
+        "128": "images/icon.png"
+    }
+  }
+  

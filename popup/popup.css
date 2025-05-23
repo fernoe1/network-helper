@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #2dbf62;
+    --secondary-color: #82b1ff;
+    --background-color: #5495ff;
+    --text-color: #333;
+  }
+  
+  body {
+    font-family: serif, sans-serif;
+    background-color: var(--background-color);
+    text-align: center;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .popup-container {
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .vpn-logo {
+    width: 20em;
+  }
+  
+  .vpn-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 8px;
+  }
+  
+  .vpn-description {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+  }
+  
+  .vpn-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .primary {
+    background-color: var(--primary-color);
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .secondary {
+    background-color: white;
+    border: 1px solid #ccc;
+    color: var(--text-color);
+    font-weight: bold;
+  }
+  
+  .vpn-button:hover {
+    opacity: 0.8;
+  }
+  
